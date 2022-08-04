@@ -1,0 +1,52 @@
+version: '3'
+services:
+  # web:
+  #   container_name: docker-nginx
+  #   image: nginx:latest
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+  #     - ./nginx/sites-enabled:/etc/nginx/conf.d/sites-enabled
+  #     - ./nginx/logs:/var/log/nginx
+  #     - ./nginx/ssl:/etc/ssl
+  #     - ./nginx/certs:/etc/nginx/certs
+  #     - ../../Projects:/var/www/Projects
+
+  #Agri map
+  couchbase:
+    container_name: docker-couchbase
+    image: couchbase:latest
+    # build:
+      # context: ./couchbase
+    restart: always
+    deploy:
+      replicas: 1
+    volumes:
+      - ../../Projects/agri-map/backend:/var/www/agri-map
+    ports:
+      - 8091:8091
+      - 8092:8092
+      - 8093:8093
+      - 8094:8094
+      - 11210:11210
+    env_file: './.env'
+    tty: true
+
+  agri:
+    container_name: docker-agri-server
+    # platform: linux/amd64
+    build:
+      context: ./server
+    restart: always
+    volumes:
+      - ../../Projects/agri-map:/var/www/agri-map
+    ports:
+      - 8888:80
+      - 6042:6042
+      - 5023:5023
+      - 5013:5013
+    env_file: './.env'
+    tty: true
