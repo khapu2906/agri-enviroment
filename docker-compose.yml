@@ -17,15 +17,15 @@ services:
 
   #Agri map
   couchbase:
-    container_name: docker-couchbase
-    image: couchbase:latest
-    # build:
-      # context: ./couchbase
+    container_name: docker-couchbase-agri
+    # image: couchbase:latest
+    build:
+      context: ./couchbase
     restart: always
     deploy:
       replicas: 1
     volumes:
-      - ../../Projects/agri-map/backend:/var/www/agri-map
+      - ./couchbase:/opt/couchbase/var 
     ports:
       - 8091:8091
       - 8092:8092
@@ -42,11 +42,15 @@ services:
       context: ./server
     restart: always
     volumes:
-      - ../../Projects/agri-map:/var/www/agri-map
+      - ../../Projects/agri_map:/var/www/agri_map
     ports:
-      - 8888:80
+      # - 8888:80
       - 6042:6042
       - 5023:5023
       - 5013:5013
     env_file: './.env'
     tty: true
+    links:
+      - couchbase
+    depends_on:
+      - couchbase

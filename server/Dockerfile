@@ -20,14 +20,20 @@ COPY "$pwd"/py-install.sh /home/
 RUN chmod +x /home/py-install.sh
 RUN /home/py-install.sh
 
-ENV FOLDER_PATH_DEFAULT=/var/www/agri-map
-ENV FOLDER_PATH_BDNS_SERVER=/var/www/agri-map/backend/bdns-server
-ENV FOLDER_PATH_BDNS_API_JAVA=/var/www/agri-map/backend/bdns-api-java
-ENV FOLDER_PATH_BDNS_CACHE_JAVA=/var/www/agri-map/backend/bdns-cache-java
+ENV FOLDER_PATH_DEFAULT=/var/www/agri_map
+ENV FOLDER_PATH_BDNS_SERVER=/var/www/agri_map/backend/bdns-server
+ENV FOLDER_PATH_BDNS_API_JAVA=/var/www/agri_map/backend/bds-api-java
+ENV FOLDER_PATH_BDNS_CACHE_JAVA=/var/www/agri_map/backend/bdns-cache-java
 
-RUN cd $FOLDER_PATH_BDNS_SERVER && npm install && sh r
-RUN cd $FOLDER_PATH_BDNS_API_JAVA && sh r3
-RUN cd $FOLDER_PATH_BDNS_CACHE_JAVA && sh r3
+# CMD ["cd ", $FOLDER_PATH_BDNS_SERVER && npm install && sh r"]
+# RUN cd $FOLDER_PATH_BDNS_API_JAVA && sh r3
+# RUN cd $FOLDER_PATH_BDNS_CACHE_JAVA && sh r3cle
+
+EXPOSE 6042
+EXPOSE 5023
+EXPOSE 5013
+
+
 
 
 
