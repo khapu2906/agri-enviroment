@@ -3,7 +3,22 @@ LABEL Name=developer-agri Version=0.0.1
 
 RUN yum update -y && yum install -y \
 	epel-release \
-	vim 
+	vim \
+	git \ 
+	libssl-dev \
+	libusb-1.0-0-dev \
+	pkg-config \ 
+	libgtk-3-dev  \
+	gcc \
+	gcc-c++ \
+	make \
+	curl \
+	openssl-devel \ 
+	bzip2-devel \
+	libffi-devel \
+	build-essential \
+	devtoolset-2-gcc \ 
+	devtoolset-2-binutils
 
 #node10
 COPY "$pwd"/node10-install.sh /home/
