@@ -1,0 +1,17 @@
+2022/08/07 03:39:59 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:00 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:00 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:01 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:02 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:04 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:08 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:15 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:28 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:40:53 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:41:45 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:42:45 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:43:45 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:44:46 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:45:46 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:46:46 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37
+2022/08/07 03:47:47 [emerg] 1#1: host not found in upstream "pma" in /etc/nginx/conf.d/sites-enabled/cafe24-ivy-usa.beetsoft.local.conf:37

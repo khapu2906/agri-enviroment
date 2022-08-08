@@ -14,3 +14,5 @@ nvm install 10.16.3 &&
 nvm use 10 &&
 npm install pm2 -g
 
+ps -e | grep PM2
+

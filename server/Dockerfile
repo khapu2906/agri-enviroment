@@ -18,7 +18,10 @@ RUN yum update -y && yum install -y \
 	libffi-devel \
 	build-essential \
 	devtoolset-2-gcc \ 
-	devtoolset-2-binutils
+	devtoolset-2-binutils \
+	iputils \
+	wget \
+	telnet
 
 #node10
 COPY "$pwd"/node10-install.sh /home/
