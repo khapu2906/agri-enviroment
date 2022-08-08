@@ -1,19 +1,18 @@
 version: '3'
 services:
-  # web:
-  #   container_name: docker-nginx
-  #   image: nginx:latest
-  #   restart: always
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-  #     - ./nginx/sites-enabled:/etc/nginx/conf.d/sites-enabled
-  #     - ./nginx/logs:/var/log/nginx
-  #     - ./nginx/ssl:/etc/ssl
-  #     - ./nginx/certs:/etc/nginx/certs
-  #     - ../../Projects:/var/www/Projects
+  web:
+    container_name: docker-agri-nginx
+    image: nginx:latest
+    restart: always
+    ports:
+      - "80:80"
+      # - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/sites-enabled:/etc/nginx/conf.d/sites-enabled
+      - ./nginx/logs:/var/log/nginx
+      - ../../Projects/agri_map:/var/www/agri_map
+    env_file: './.env'
 
   #Agri map
   couchbase:
